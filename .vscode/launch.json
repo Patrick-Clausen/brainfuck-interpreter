@@ -9,6 +9,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}\\src",
             "environment": [],
+            "externalConsole": true,
             "symbolSearchPath": "${workspaceFolder}\\bazel-bin\\src",
             "preLaunchTask": "Build main entrypoint"
         }

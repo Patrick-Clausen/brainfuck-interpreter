@@ -7,6 +7,9 @@
 #include <fstream>
 #include <sstream>
 
+#include "symbols/symbols.hpp"
+#include "executor/executor.hpp"
+
 int main(int argc, char *argv[])
 {
 
@@ -33,9 +36,11 @@ int main(int argc, char *argv[])
     {
         char c = brainfuck_file.get();
         string_stream << c;
-    }
+   }
 
-    std::cout << string_stream.str() << std::endl;
+    std::vector<Symbol> symbols = convertToSymbols(string_stream.str());
+
+    execute(symbols);
 
     return 0;
 }
