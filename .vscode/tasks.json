@@ -5,8 +5,17 @@
     "tasks": [
       {
         "type": "shell",
-        "label": "Build main entrypoint",
-        "command": "bazel build //src:main -c dbg",
+        "label": "build-debug",
+        "command": "bazel clean; bazel build //src:main -c dbg",
+        "group": {
+            "kind": "build",
+            "isDefault": false
+        }
+      },
+      {
+        "type": "shell",
+        "label": "build",
+        "command": "bazel clean; bazel build //src:main",
         "group": {
             "kind": "build",
             "isDefault": true
