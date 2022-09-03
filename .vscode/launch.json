@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\bazel-bin\\src\\main.exe",
+            "args": ["${workspaceFolder}\\hello-world.bf"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}\\src",
+            "environment": [],
+            "symbolSearchPath": "${workspaceFolder}\\bazel-bin\\src",
+            "preLaunchTask": "Build main entrypoint"
+        }
+    ]
+}
