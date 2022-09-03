@@ -5,7 +5,7 @@
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\bazel-bin\\src\\main.exe",
-            "args": ["${workspaceFolder}\\hello-world.bf"],
+            "args": ["${workspaceFolder}\\samples\\hello-world.bf"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}\\src",
             "environment": [],
